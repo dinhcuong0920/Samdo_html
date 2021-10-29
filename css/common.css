@@ -1,0 +1,244 @@
+@font-face {
+    font-family: myFont;
+    src: url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+}
+
+* {
+    font-family: myFont;
+}
+
+html .container,
+body .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+html a:hover,
+html a:focus,
+body a:hover,
+body a:focus {
+    text-decoration: none;
+}
+
+html img,
+body img {
+    max-width: 100%;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+a {
+    color: #7E7E84;
+    text-decoration: none;
+}
+
+.header {
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    transition: 1s;
+}
+
+/*------------header Top---------------*/
+@media (max-width: 1023px) {
+    .header__top {
+        display: none;
+    }
+}
+
+/*------------header Top---------------*/
+/*------------header Content---------------*/
+.header__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__content--left {
+    display: flex;
+    justify-content: flex-start;
+    width: calc(100% - 250px);
+}
+
+.header__content--right {
+    display: flex;
+    width: 250px;
+    align-items: center;
+}
+
+.header__content--right .dropdown-toggle::after {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+    transform: rotate(45deg);
+    border-bottom: 2px solid #4B4B4B;
+    border-right: 2px solid #4B4B4B;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -3px;
+    margin-left: 5px;
+}
+
+.header__content__flag {
+    margin-right: 5px;
+}
+
+.dropdown-menu li {
+    padding: 0 10px;
+    display: flex;
+}
+
+.dropdown-menu li img {
+    margin-right: 5px;
+}
+
+/*------------header Content---------------*/
+/*------------header Nav---------------*/
+.navbar-header {
+    width: 150px;
+    padding-top: 5px;
+}
+
+
+.header .navbar-nav li a {
+    padding: 15px 15px;
+    transition: ease 0.5s;
+    color: #7E7E84;
+    display: block;
+}
+
+.header .navbar-nav li a:hover {
+    font-weight: 600;
+    color: #618034;
+}
+
+.header .navbar-nav li a.active {
+    font-weight: 600;
+    color: #618034;
+}
+
+.topRight .navbarTop {
+    flex-direction: row;
+}
+
+/*-----main----*/
+
+/*-----main----*/
+
+/*--------------footer-----------------*/
+.footer {
+    background: #F5F5F5;
+    padding-top: 80px;
+}
+
+.footer .footer_content {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer__item__title {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 600;
+    color: #618034;
+}
+
+.footer__item__content {
+    color: #8C95A2;
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+.footer__item__content ul li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.footer__item__content ul li.active {
+    color: #13392F;
+    font-weight: 500;
+}
+
+.footer__item__list {
+    padding: 0px;
+}
+
+.footer__item__contact {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__item .footer__item__contact a {
+    padding-bottom: 0;
+}
+
+.footer__item__contact img {
+    margin-right: 10px;
+}
+
+.footer__item a {
+    color: #D9DBE1;
+    padding-bottom: 8px;
+    display: block;
+}
+
+.footer__item a:hover {
+    opacity: 0.8;
+}
+
+.footer__bottom {
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8C95A2;
+    padding: 12px;
+}
+
+.copyright {
+    padding-top: 0px;
+    border-top: 1px solid #D7D9E2;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer__item {
+        margin-bottom: 80px;
+    }
+
+    .footer__social {
+        margin-bottom: 80px;
+    }
+
+    .footer__bottom {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__item {
+        margin-bottom: 40px;
+    }
+
+    .footer__social {
+        margin-bottom: 40px;
+    }
+
+    .footer__bottom {
+        padding-top: 40px;
+    }
+}
+
+/*--------------footer-----------------*/
